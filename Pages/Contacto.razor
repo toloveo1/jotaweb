@@ -1,0 +1,61 @@
+@page "/contacto"
+@using System.ComponentModel.DataAnnotations
+
+<PageTitle>Contacto</PageTitle>
+
+<h3>Por favor, rellena el formulario y salúdame</h3>
+
+<EditForm Model="@contacto" OnValidSubmit="ProcesarFormulario">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group mb-3">
+        <label for="nombre">Nombre</label>
+        <InputText id="nombre" class="form-control" @bind-Value="contacto.Nombre" />
+        <ValidationMessage For="@(() => contacto.Nombre)" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label for="email">Email</label>
+        <InputText id="email" type="email" class="form-control" @bind-Value="contacto.Email" />
+        <ValidationMessage For="@(() => contacto.Email)" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label for="mensaje">Mensaje</label>
+        <InputTextArea id="mensaje" class="form-control" @bind-Value="contacto.Mensaje" />
+        <ValidationMessage For="@(() => contacto.Mensaje)" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</EditForm>
+
+@if (mensajeEnviado)
+{
+    <div class="alert alert-success mt-3">
+        ¡Gracias, mensaje enviado!
+    </div>
+}
+
+@code {
+    private ContactoModel contacto = new();
+    private bool mensajeEnviado = false;
+
+    private void ProcesarFormulario()
+    {
+        mensajeEnviado = true;
+    }
+
+    public class ContactoModel
+    {
+        [Required(ErrorMessage = "Nombre obligatorio.")]
+        public string? Nombre { get; set; }
+
+        [Required(ErrorMessage = "email obligatorio.")]
+        [EmailAddress(ErrorMessage = "El email no tiene un formato válido.")]
+        public string? Email { get; set; }
+
+        [Required(ErrorMessage = "El mensaje es obligatorio.")]
+        public string? Mensaje { get; set; }
+    }
+}
