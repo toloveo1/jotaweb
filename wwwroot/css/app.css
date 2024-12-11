@@ -101,3 +101,34 @@ a, .btn-link {
 code {
     color: #c02d76;
 }
+
+/*para el formulario*/
+
+.form-group {
+    margin-bottom: 10px; 
+}
+
+.form-group label {
+    font-weight: bold; 
+}
+
+.form-group .form-control {
+    border-radius: 4px; 
+    padding: 6px 10px; 
+}
+
+body{
+    background: linear-gradient(to bottom, #e0e0e0, #ffffff); /*de gris a blanco*/
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+.container{
+    max-width: 1200px; 
+    margin: 0 auto; /* Centrado horizontal */
+    background: #ffffff; /* Fondo blanco para los contenedores */
+    padding: 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras */
+    border-radius: 8px; 
+}

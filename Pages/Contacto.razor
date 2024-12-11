@@ -9,19 +9,19 @@
     <DataAnnotationsValidator />
     <ValidationSummary />
 
-    <div class="form-group mb-3">
+    <div class="form-group mb-2">
         <label for="nombre">Nombre</label>
         <InputText id="nombre" class="form-control" @bind-Value="contacto.Nombre" />
         <ValidationMessage For="@(() => contacto.Nombre)" />
     </div>
 
-    <div class="form-group mb-3">
+    <div class="form-group mb-2">
         <label for="email">Email</label>
         <InputText id="email" type="email" class="form-control" @bind-Value="contacto.Email" />
         <ValidationMessage For="@(() => contacto.Email)" />
     </div>
 
-    <div class="form-group mb-3">
+    <div class="form-group mb-2">
         <label for="mensaje">Mensaje</label>
         <InputTextArea id="mensaje" class="form-control" @bind-Value="contacto.Mensaje" />
         <ValidationMessage For="@(() => contacto.Mensaje)" />
@@ -36,6 +36,15 @@
         ¡Gracias, mensaje enviado!
     </div>
 }
+<div class="mt-4 text-center">
+    <h5>Échame un vistazo por aquí:</h5>
+    <a href="https://www.linkedin.com/in/jconk/" target="_blank" class="me-3">
+        <i class="fab fa-linkedin fa-2x"></i>
+    </a>
+    <a href="https://github.com/toloveo1" target="_blank">
+        <i class="fab fa-github fa-2x"></i>
+    </a>
+</div>
 
 @code {
     private ContactoModel contacto = new();

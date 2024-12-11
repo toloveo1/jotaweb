@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("jotaweb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4003a42dbabe9c415bfcde68c7dc93281f78cfa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abc38db935afad88404ee93dffbd5f900ee516c9")]
 [assembly: System.Reflection.AssemblyProductAttribute("jotaweb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("jotaweb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
