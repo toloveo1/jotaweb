@@ -1,5 +1,5 @@
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h1:focus {
@@ -126,9 +126,33 @@ body{
 }
 .container{
     max-width: 1200px; 
-    margin: 0 auto; /* Centrado horizontal */
-    background: #ffffff; /* Fondo blanco para los contenedores */
+    margin: 0 auto; /* Centrado */
+    background: #ffffff; /* Fondo blanco para el recuadro, ver si darle un tono blanco roto */
     padding: 20px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px; 
 }
+.home-background {
+    position: relative; /* Permite que el contenido interno se ajuste */
+    height: 100vh; /* Ajusta al tamaño de la ventana */
+    width: 100%; /* Cubre todo el ancho */
+    display: flex;
+    justify-content: center; /* Centra contenido horizontalmente */
+    align-items: center; /* Centra contenido verticalmente */
+}
+
+.home-background::before {
+    content: ""; /* Elemento para el fondo */
+    background-image: url('rabbit-6024540_1280.jpg'); /* Ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: opacity(50%); /* Aplica el efecto solo al fondo */
+    position: absolute; /* Cubre todo el contenedor */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Envía el fondo detrás del contenido */
+}
+
