@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QOhHwYwpXaM1Zh2pqqFqpAUkPIzgo+4J3tFz2SE+3tk=",
+  "Hash": "YhO9aJq5CnhsZQlDC80Ds3vre8zOc8wQpEfCPWBQGF0=",
   "Source": "jotaweb",
   "BasePath": "/",
   "Mode": "Root",
@@ -7826,6 +7826,25 @@
       "OriginalItemSpec": "wwwroot\\bienvenida.jpg"
     },
     {
+      "Identity": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\contact-6929779_1280.jpg",
+      "SourceId": "jotaweb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "contact-6929779_1280.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\contact-6929779_1280.jpg"
+    },
+    {
       "Identity": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\css\\app.css",
       "SourceId": "jotaweb",
       "SourceType": "Discovered",
@@ -7881,6 +7900,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\faces-5471629_1280.jpg",
+      "SourceId": "jotaweb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "faces-5471629_1280.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\faces-5471629_1280.jpg"
     },
     {
       "Identity": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\favicon.png",
@@ -7957,6 +7995,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\rabbit-6024540_1280.jpg",
+      "SourceId": "jotaweb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "rabbit-6024540_1280.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\rabbit-6024540_1280.jpg"
     },
     {
       "Identity": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\sample-data\\weather.json",

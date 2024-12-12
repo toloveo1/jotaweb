@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\bienvenida.jpg"
     },
     {
+      "Id": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\contact-6929779_1280.jpg",
+      "PackagePath": "staticwebassets\\contact-6929779_1280.jpg"
+    },
+    {
       "Id": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
@@ -27,6 +31,10 @@
     {
       "Id": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\faces-5471629_1280.jpg",
+      "PackagePath": "staticwebassets\\faces-5471629_1280.jpg"
     },
     {
       "Id": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\favicon.png",
@@ -43,6 +51,10 @@
     {
       "Id": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\rabbit-6024540_1280.jpg",
+      "PackagePath": "staticwebassets\\rabbit-6024540_1280.jpg"
     },
     {
       "Id": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\sample-data\\weather.json",
