@@ -133,22 +133,23 @@ body{
     border-radius: 8px; 
 }
 .home-background {
-    position: relative; /* Permite que el contenido interno se ajuste */
+    position: relative; 
     height: 100vh; /* Ajusta al tamaño de la ventana */
-    width: 100%; /* Cubre todo el ancho */
+    width: 100%; /*Cubre todo el ancho */
     display: flex;
-    justify-content: center; /* Centra contenido horizontalmente */
+    justify-content: center; /** Centra contenido horizontalmente */
     align-items: center; /* Centra contenido verticalmente */
 }
 
+/* Este background no funciona, ver y revisar */
 .home-background::before {
     content: ""; /* Elemento para el fondo */
-    background-image: url('rabbit-6024540_1280.jpg'); /* Ruta de la imagen */
+    background-image: url('rabbit-6024540_1280.jpg'); /*Ruta de la imagen */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     filter: opacity(50%); /* Aplica el efecto solo al fondo */
-    position: absolute; /* Cubre todo el contenedor */
+    position: absolute; /*Cubre todo el container*/
     top: 0;
     left: 0;
     right: 0;
