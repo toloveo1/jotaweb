@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m9VaLHvNTo4EGnbX01ejBD/l5GJbJAtlUk/gPHGcqB8JaWN0mQ9GEPM3J/IgZglLR3dk2DppPv/ph4zbEdhbpg==",
+  "dgSpecHash": "QD47tWv3RRWEMGm5oiWn0XfUjk8iiOSZVLnHJeQL7MIGIu95eMYzQ/PCSi943ovSNjMfe6H5Kxrqn/oGK+qLMg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jorge\\Documents\\jotaweb\\jotaweb.csproj",
+  "projectFilePath": "C:\\Users\\jorge\\Documents\\proyectosProgramacion\\jotaweb\\jotaweb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jorge\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.2\\microsoft.aspnetcore.authorization.8.0.2.nupkg.sha512",
     "C:\\Users\\jorge\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.2\\microsoft.aspnetcore.components.8.0.2.nupkg.sha512",

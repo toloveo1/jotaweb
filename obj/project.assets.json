@@ -2062,11 +2062,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jorge\\Documents\\jotaweb\\jotaweb.csproj",
+      "projectUniqueName": "C:\\Users\\jorge\\Documents\\proyectosProgramacion\\jotaweb\\jotaweb.csproj",
       "projectName": "jotaweb",
-      "projectPath": "C:\\Users\\jorge\\Documents\\jotaweb\\jotaweb.csproj",
+      "projectPath": "C:\\Users\\jorge\\Documents\\proyectosProgramacion\\jotaweb\\jotaweb.csproj",
       "packagesPath": "C:\\Users\\jorge\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jorge\\Documents\\jotaweb\\obj\\",
+      "outputPath": "C:\\Users\\jorge\\Documents\\proyectosProgramacion\\jotaweb\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jorge\\AppData\\Roaming\\NuGet\\NuGet.Config"

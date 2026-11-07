@@ -2,20 +2,26 @@
 
 <PageTitle>Proyectos - Jotaweb</PageTitle>
 
-<div class="container mt-4 mb-5">
+<div class="container py-5">
     <div class="text-center mb-5">
-        <h2 class="text-primary fw-bold">Mis Proyectos</h2>
-        <p class="text-muted">Una selección de mis trabajos y desarrollos recientes en .NET, Blazor y tecnologías web.</p>
+        <h2 class="display-5 fw-bold text-primary">Mis Proyectos</h2>
+        <p class="lead text-muted">Una selección de mis trabajos y desarrollos recientes en .NET, Blazor y tecnologías web.</p>
     </div>
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         @foreach (var proyecto in listaProyectos)
         {
             <div class="col">
-                <div class="card h-100 shadow-sm border-0">
+                <div class="card h-100 shadow-sm border-0 project-card transition-hover">
                     @if (!string.IsNullOrEmpty(proyecto.ImagenUrl))
                     {
-                        <img src="@proyecto.ImagenUrl" class="card-img-top" alt="@proyecto.Titulo" style="height: 200px; object-fit: cover;" />
+                        <img src="@proyecto.ImagenUrl" class="card-img-top" alt="Captura de @proyecto.Titulo" style="height: 200px; object-fit: cover;" />
+                    }
+                    else
+                    {
+                        <div class="card-img-top bg-light d-flex align-items-center justify-content-center text-secondary" style="height: 200px;">
+                            <i class="bi bi-image" style="font-size: 3rem;"></i>
+                        </div>
                     }
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title fw-bold text-dark">@proyecto.Titulo</h5>
@@ -24,20 +30,20 @@
                         <div class="mb-3">
                             @foreach (var tech in proyecto.Tecnologias)
                             {
-                                <span class="badge bg-secondary me-1 mb-1">@tech</span>
+                                <span class="badge bg-secondary me-1 mb-1 fw-normal">@tech</span>
                             }
                         </div>
 
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top">
                             @if (!string.IsNullOrEmpty(proyecto.EnlaceGitHub))
                             {
-                                <a href="@proyecto.EnlaceGitHub" target="_blank" class="btn btn-outline-dark btn-sm rounded-pill">
+                                <a href="@proyecto.EnlaceGitHub" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark btn-sm rounded-pill px-3">
                                     <i class="bi bi-github me-1"></i> GitHub
                                 </a>
                             }
                             @if (!string.IsNullOrEmpty(proyecto.EnlaceDemo))
                             {
-                                <a href="@proyecto.EnlaceDemo" target="_blank" class="btn btn-primary btn-sm rounded-pill">
+                                <a href="@proyecto.EnlaceDemo" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm rounded-pill px-3">
                                     <i class="bi bi-globe me-1"></i> Demo
                                 </a>
                             }
@@ -66,7 +72,7 @@
             Descripcion = "Aplicación de gestión de tareas con operaciones CRUD completas, validación de formularios y persistencia local.",
             Tecnologias = new List<string> { "C#", ".NET", "Entity Framework", "Blazor" },
             EnlaceGitHub = "https://github.com/toloveo1",
-            ImagenUrl = ""
+            ImagenUrl = "tareas.jpg"
         },
         new ProyectoModel
         {
@@ -74,7 +80,7 @@
             Descripcion = "Servicio backend desarrollado en ASP.NET Core Web API con autenticación JWT y documentación Swagger.",
             Tecnologias = new List<string> { "C#", "ASP.NET Core", "SQL Server", "JWT" },
             EnlaceGitHub = "https://github.com/toloveo1",
-            ImagenUrl = ""
+            ImagenUrl = "pexels.jpg"
         }
     };
 

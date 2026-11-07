@@ -1,63 +1,63 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\jorge\\Documents\\jotaweb\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\Users\\jorge\\Documents\\proyectosProgramacion\\jotaweb\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Users\\jorge\\Documents\\jotaweb\\obj\\Debug\\net8.0\\compressed\\uv890yechq.gz",
+      "Id": "C:\\Users\\jorge\\Documents\\proyectosProgramacion\\jotaweb\\obj\\Debug\\net8.0\\compressed\\uv890yechq.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "C:\\Users\\jorge\\Documents\\jotaweb\\obj\\Debug\\net8.0\\scopedcss\\bundle\\jotaweb.styles.css",
+      "Id": "C:\\Users\\jorge\\Documents\\proyectosProgramacion\\jotaweb\\obj\\Debug\\net8.0\\scopedcss\\bundle\\jotaweb.styles.css",
       "PackagePath": "staticwebassets\\jotaweb.styles.css"
     },
     {
-      "Id": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\bienvenida.jpg",
+      "Id": "C:\\Users\\jorge\\Documents\\proyectosProgramacion\\jotaweb\\wwwroot\\bienvenida.jpg",
       "PackagePath": "staticwebassets\\bienvenida.jpg"
     },
     {
-      "Id": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\contact-6929779_1280.jpg",
+      "Id": "C:\\Users\\jorge\\Documents\\proyectosProgramacion\\jotaweb\\wwwroot\\contact-6929779_1280.jpg",
       "PackagePath": "staticwebassets\\contact-6929779_1280.jpg"
     },
     {
-      "Id": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\jorge\\Documents\\proyectosProgramacion\\jotaweb\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\jorge\\Documents\\proyectosProgramacion\\jotaweb\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\jorge\\Documents\\proyectosProgramacion\\jotaweb\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\faces-5471629_1280.jpg",
+      "Id": "C:\\Users\\jorge\\Documents\\proyectosProgramacion\\jotaweb\\wwwroot\\faces-5471629_1280.jpg",
       "PackagePath": "staticwebassets\\faces-5471629_1280.jpg"
     },
     {
-      "Id": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\jorge\\Documents\\proyectosProgramacion\\jotaweb\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\fotoYo.jpg",
+      "Id": "C:\\Users\\jorge\\Documents\\proyectosProgramacion\\jotaweb\\wwwroot\\fotoYo.jpg",
       "PackagePath": "staticwebassets\\fotoYo.jpg"
     },
     {
-      "Id": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\icon-192.png",
+      "Id": "C:\\Users\\jorge\\Documents\\proyectosProgramacion\\jotaweb\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\index.html",
+      "Id": "C:\\Users\\jorge\\Documents\\proyectosProgramacion\\jotaweb\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\rabbit-6024540_1280.jpg",
+      "Id": "C:\\Users\\jorge\\Documents\\proyectosProgramacion\\jotaweb\\wwwroot\\rabbit-6024540_1280.jpg",
       "PackagePath": "staticwebassets\\rabbit-6024540_1280.jpg"
     },
     {
-      "Id": "C:\\Users\\jorge\\Documents\\jotaweb\\wwwroot\\sample-data\\weather.json",
+      "Id": "C:\\Users\\jorge\\Documents\\proyectosProgramacion\\jotaweb\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {

@@ -1,61 +1,73 @@
 @page "/contacto"
 @using System.ComponentModel.DataAnnotations
 
-<PageTitle>Contacto</PageTitle>
+<PageTitle>Contacto - Jotaweb</PageTitle>
 
-<h3>Por favor, rellena el formulario y salúdame</h3>
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            
+            <div class="card shadow-sm border-0 mb-5">
+                <div class="card-body p-4 p-md-5">
+                    <div class="text-center mb-4">
+                        <h2 class="fw-bold text-primary">Contacto</h2>
+                        <p class="text-muted">Por favor, rellena el formulario y salúdame</p>
+                    </div>
 
-<EditForm Model="@contacto" OnValidSubmit="ProcesarFormulario">
-    <DataAnnotationsValidator />
-    <ValidationSummary />
+                    <EditForm Model="@contacto" OnValidSubmit="ProcesarFormulario">
+                        <DataAnnotationsValidator />
 
-    <div class="form-group mb-2">
-        <label for="nombre">Nombre</label>
-        <InputText id="nombre" class="form-control" @bind-Value="contacto.Nombre" />
-        <ValidationMessage For="@(() => contacto.Nombre)" />
+                        <div class="form-floating mb-3">
+                            <InputText id="nombre" class="form-control" @bind-Value="contacto.Nombre" placeholder="Tu nombre" />
+                            <label for="nombre">Nombre</label>
+                            <ValidationMessage For="@(() => contacto.Nombre)" class="text-danger small mt-1" />
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <InputText id="email" type="email" class="form-control" @bind-Value="contacto.Email" placeholder="Tu email" />
+                            <label for="email">Email</label>
+                            <ValidationMessage For="@(() => contacto.Email)" class="text-danger small mt-1" />
+                        </div>
+
+                        <div class="form-floating mb-4">
+                            <InputTextArea id="mensaje" class="form-control" @bind-Value="contacto.Mensaje" placeholder="Tu mensaje" style="height: 120px" />
+                            <label for="mensaje">Mensaje</label>
+                            <ValidationMessage For="@(() => contacto.Mensaje)" class="text-danger small mt-1" />
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 py-2 rounded-pill fw-bold transition-hover">
+                            <i class="bi bi-send me-2"></i> Enviar Mensaje
+                        </button>
+                    </EditForm>
+
+                    @if (mensajeEnviado)
+                    {
+                        <div class="alert alert-success mt-4 mb-0 d-flex align-items-center" role="alert">
+                            <i class="bi bi-check-circle-fill me-2"></i>
+                            <div>¡Gracias, he recibido tu mensaje!</div>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <div class="text-center">
+                <h5 class="fw-light mb-4">Si lo prefieres, también puedes encontrarme en:</h5>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="https://www.linkedin.com/in/jconk/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary rounded-circle p-3 lh-1 shadow-sm transition-hover">
+                        <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
+                    </a>
+                    <a href="https://github.com/toloveo1" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark rounded-circle p-3 lh-1 shadow-sm transition-hover">
+                        <i class="bi bi-github" style="font-size: 1.5rem;"></i>
+                    </a>
+                    <a href="https://medium.com/@@jorgeconca" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary rounded-circle p-3 lh-1 shadow-sm transition-hover">
+                        <i class="bi bi-medium" style="font-size: 1.5rem;"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
     </div>
-
-    <div class="form-group mb-2">
-        <label for="email">Email</label>
-        <InputText id="email" type="email" class="form-control" @bind-Value="contacto.Email" />
-        <ValidationMessage For="@(() => contacto.Email)" />
-    </div>
-
-    <div class="form-group mb-2">
-        <label for="mensaje">Mensaje</label>
-        <InputTextArea id="mensaje" class="form-control" @bind-Value="contacto.Mensaje" />
-        <ValidationMessage For="@(() => contacto.Mensaje)" />
-    </div>
-
-    <button type="submit" class="btn btn-primary">Enviar</button>
-</EditForm>
-
-@if (mensajeEnviado)
-{
-    <div class="alert alert-success mt-3">
-        ¡Gracias, mensaje enviado!
-    </div>
-}
-<div class="mt-4 text-center">
-    <h5>Si lo prefieres, mejor puedes visitarme en:</h5>
-    <a href="https://www.linkedin.com/in/jconk/" target="_blank" class="me-3">
-        <i class="fab fa-linkedin fa-2x"></i>
-    </a>
-    <a href="https://github.com/toloveo1" target="_blank" class="me-3">
-        <i class="fab fa-github fa-2x"></i>
-    </a>
-   
 </div>
-<div class="mt-4 text-center">
- <h6>Y si quieres mas, puedes leer artículos mios en:</h6>
-      <a href="https://medium.com/@@jorgeconca" target="_blank">
-    <i class="fab fa-medium fa-2x"></i>
-    </a>
-</div>
-
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-<div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="jconk" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://es.linkedin.com/in/jconk?trk=profile-badge">Jorge C.</a></div>
-              
 
 @code {
     private ContactoModel contacto = new();
@@ -63,15 +75,18 @@
 
     private void ProcesarFormulario()
     {
+        // En Blazor WebAssembly, las claves de APIs de correo (como SendGrid) 
+        // quedarían expuestas si se envían desde aquí. La lógica real de envío 
+        // deberá delegarse a un backend o servicio de terceros en el futuro.
         mensajeEnviado = true;
     }
 
     public class ContactoModel
     {
-        [Required(ErrorMessage = "Nombre obligatorio.")]
+        [Required(ErrorMessage = "El nombre es obligatorio.")]
         public string? Nombre { get; set; }
 
-        [Required(ErrorMessage = "email obligatorio.")]
+        [Required(ErrorMessage = "El email es obligatorio.")]
         [EmailAddress(ErrorMessage = "El email no tiene un formato válido.")]
         public string? Email { get; set; }
 

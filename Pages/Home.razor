@@ -1,24 +1,23 @@
 ﻿@page "/"
 
-<PageTitle>Bienvenido a mi página personal</PageTitle>
+<PageTitle>Inicio - Jotaweb</PageTitle>
 
-<div class="home-background">
- <div class="container">
-    <div class="text-center">
-    <h1>Bienvenidos a mi portafolio</h1>
+<main class="home-background d-flex align-items-center justify-content-center text-center">
+    <div class="container bg-white bg-opacity-75 p-5 rounded-4 shadow-lg content-card" style="backdrop-filter: blur(5px); max-width: 800px;">
+        <h1 class="display-5 fw-bold text-primary mb-3">Bienvenidos a mi portafolio</h1>
+        <h3 class="fw-light mb-4 text-dark">¡Hola! Esta es mi página web personal creada desde cero</h3>
+        
+        <p class="lead text-dark mb-4">
+            Soy Jorge, desarrollador web, y estoy aquí para ofrecer soluciones tecnológicas.<br />
+            Descubre más sobre mí y no dudes en ponerte en contacto. Yo no te fallaré.
+        </p>
 
+        @* Asegúrate de que bienvenida.jpg esté en la carpeta wwwroot *@
+        <img src="bienvenida.jpg" alt="Foto de bienvenida de Jorge" class="img-fluid rounded-3 shadow-sm mb-4" style="max-height: 350px; object-fit: cover;" />
 
-    <h3 class="mt-4">¡Hola! Esta es mi página web personal creada desde cero </h3>
-    <p>Soy Jorge, un desarrollador web junior y estoy aquí para ofrecer soluciones tecnológicas.</p>
-    <p>Descubre mas sobre mí y no dudes en ponerte en contacto! Yo no te fallaría.</p>
-    <img src="bienvenida.jpg" alt="foto de bienvenida" class="img-fluid my-4" style="max-width: 550px; height: auto;"/> 
-
-    <div class="d-grip gap-2 col-6 mx-auto my-3">
-        <a href="/quienessomos" class="btn btn-primary rounded-pill shadow-lg">Sobre mí</a>
-        <a href="/contacto" class="btn btn-secondary rounded-pill shadow-lg"> Contáctame</a>
+        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center mt-2">
+            <a href="quienessomos" class="btn btn-primary btn-lg px-4 rounded-pill shadow-sm">Sobre mí</a>
+            <a href="contacto" class="btn btn-outline-secondary btn-lg px-4 rounded-pill shadow-sm text-dark border-dark">Contáctame</a>
+        </div>
     </div>
-
-
-    </div>
- </div>
-</div>
+</main>
